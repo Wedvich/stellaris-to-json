@@ -24,3 +24,18 @@ it('correctly converts an array data file into JSON', async () => {
 
   expect(actual).toEqual(expected);
 });
+
+it('returns an empty object if an empty string is passed', () => {
+  const empty = convert('');
+  expect(empty).toEqual('{}');
+});
+
+it('returns an empty object if undefined is passed', () => {
+  const empty = convert(undefined as string);
+  expect(empty).toEqual('{}');
+});
+
+it('returns an empty object if null is passed', () => {
+  const empty = convert(null as string);
+  expect(empty).toEqual('{}');
+});

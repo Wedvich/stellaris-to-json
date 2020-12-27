@@ -4,10 +4,11 @@ import { transform } from './transformer';
 import { generate } from './generator';
 import * as t from './types';
 
-/**
- * Converts a Stellaris data file to JSON.
- */
 export const convert = (text: string): string => {
+  if (!text) {
+    return generate(t.objectExpression([]));
+  }
+
   const tokens = tokenize(text);
   let ast: t.AstNode = parse(tokens);
 
