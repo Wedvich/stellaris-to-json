@@ -6,7 +6,7 @@ const config = {
   entry: './src/index.ts',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'stellaris-to-json.js',
+    filename: 'index.js',
     library: 'stellarisToJson',
     libraryTarget: 'umd',
     globalObject: 'this',

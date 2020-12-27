@@ -1,13 +1,12 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "declarationMap": true,
     "declarationDir": "dist",
+    "emitDeclarationOnly": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "module": "esnext",
     "moduleResolution": "node",
-    "noEmit": true,
     "outDir": "dist",
     "resolveJsonModule": true,
     "strict": true,

@@ -1,6 +1,6 @@
 {
   "name": "stellaris-to-json",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Node.js library for parsing and transforming Stellaris data files to JSON.",
   "keywords": [
     "stellaris"
@@ -14,17 +14,15 @@
   "files": [
     "dist"
   ],
-  "main": "dist/stellaris-to-json.js",
+  "main": "dist/index.js",
   "sideEffects": false,
   "scripts": {
-    "build": "webpack",
-    "commitlint": "commitlint",
+    "build": "tsc --pretty && webpack",
     "postinstall": "husky install",
     "postpublish": "pinst --enable",
     "prepublishOnly": "pinst --disable",
     "prettier": "prettier --write '**/*.{js,ts,tsx,json}'",
-    "test": "jest",
-    "typecheck": "tsc"
+    "test": "jest"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
