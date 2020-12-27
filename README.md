@@ -2,9 +2,9 @@
 
 A Node.js library for parsing and transforming Stellaris data files to JSON.
 
-Supports Node 10+.
+[![npm version](https://badge.fury.io/js/stellaris-to-json.svg)](https://badge.fury.io/js/stellaris-to-json)
 
-Usage:
+Supports Node 10+. Usage:
 
 ```js
 const fs = require('fs');
