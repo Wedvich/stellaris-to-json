@@ -9,6 +9,7 @@ const config = {
     filename: 'stellaris-to-json.js',
     library: 'stellarisToJson',
     libraryTarget: 'umd',
+    globalObject: 'this',
   },
   mode: 'production',
   module: {
