@@ -1,0 +1,22 @@
+#This set is still used for a lot of event ships etc
+component_set = {
+	key = "combat_computers"
+
+	required_component_set = yes
+	icon = "GFX_ship_part_computer"
+	icon_frame = 1
+}
+component_set = {
+	key = "corvette_combat_computers"
+
+	required_component_set = yes
+	icon = "GFX_ship_part_computer"
+	icon_frame = 1
+}
+component_set = {
+	key = "destroyer_combat_computers"
+
+	required_component_set = yes
+	icon = "GFX_ship_part_computer"
+	icon_frame = 1
+}

@@ -1,0 +1,22 @@
+{
+  "component_set": [
+    {
+      "key": "combat_computers",
+      "required_component_set": true,
+      "icon": "GFX_ship_part_computer",
+      "icon_frame": 1
+    },
+    {
+      "key": "corvette_combat_computers",
+      "required_component_set": true,
+      "icon": "GFX_ship_part_computer",
+      "icon_frame": 1
+    },
+    {
+      "key": "destroyer_combat_computers",
+      "required_component_set": true,
+      "icon": "GFX_ship_part_computer",
+      "icon_frame": 1
+    }
+  ]
+}
