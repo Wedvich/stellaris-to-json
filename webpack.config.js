@@ -1,3 +1,5 @@
+process.env.NODE_EV = 'production';
+
 const path = require('path');
 
 const config = {
@@ -5,18 +7,20 @@ const config = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'stellaris-to-json.js',
+    library: 'stellarisToJson',
+    libraryTarget: 'umd',
   },
   mode: 'production',
   module: {
     rules: [
       {
-        test: /\.ts$/,
+        test: /\.[jt]s$/,
         use: 'babel-loader',
       },
     ],
   },
   resolve: {
-    extensions: ['.ts'],
+    extensions: ['.js', '.ts'],
   },
 };
 

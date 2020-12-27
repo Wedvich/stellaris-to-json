@@ -2,13 +2,20 @@
   "name": "stellaris-to-json",
   "version": "1.0.0",
   "description": "A library for parsing and transforming converting Stellaris data files to JSON.",
+  "keywords": [
+    "stellaris"
+  ],
   "repository": "git@github.com:Wedvich/stellaris-to-json.git",
-  "author": "Martin Wedvich <wedvich@gmail.com>",
+  "author": "Martin Wedvich",
+  "engines": {
+    "node": ">= 10"
+  },
   "license": "MIT",
   "files": [
     "dist"
   ],
   "main": "dist/stellaris-to-json.js",
+  "sideEffects": false,
   "scripts": {
     "build": "webpack",
     "prettier": "prettier --write '**/*.{js,ts,tsx,json}'",

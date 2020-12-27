@@ -4,5 +4,8 @@ module.exports = {
     test: {
       presets: [['@babel/preset-env', { targets: { node: 'current' } }]],
     },
+    production: {
+      presets: [['@babel/preset-env', { targets: { node: '10' } }]],
+    },
   },
 };
