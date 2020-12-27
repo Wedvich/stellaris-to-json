@@ -1,3 +1,3 @@
 # stellaris-to-json
 
-Parser and transformer for converting Stellaris data files to JSON
+A library for parsing and transforming converting Stellaris data files to JSON.

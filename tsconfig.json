@@ -2,6 +2,7 @@
   "compilerOptions": {
     "esModuleInterop": true,
     "moduleResolution": "node",
-    "sourceMap": true,
+    "noEmit": true,
+    "strict": true
   }
 }

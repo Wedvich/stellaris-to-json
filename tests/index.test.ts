@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-import { convert } from '../src/converter';
+import { convert } from '../src';
 
 it('correctly converts an object data file into JSON', async () => {
   const fixture = await fs.promises.readFile(path.join(__dirname, './fixtures/00_required_sets.txt'), 'utf8');
