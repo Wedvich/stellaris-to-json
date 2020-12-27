@@ -1,7 +1,7 @@
 {
   "name": "stellaris-to-json",
-  "version": "1.0.0",
-  "description": "A library for parsing and transforming converting Stellaris data files to JSON.",
+  "version": "1.0.1",
+  "description": "A Node.js library for parsing and transforming Stellaris data files to JSON.",
   "keywords": [
     "stellaris"
   ],
