@@ -169,3 +169,11 @@ it('supports negative fractional numbers', () => {
     { type: 'number', value: '-0.25' },
   ]);
 });
+
+it('supports end-of-file comments', () => {
+  const fixture = '#}';
+
+  const tokens = tokenize(fixture);
+
+  expect(tokens).toEqual([{ type: 'comment', value: '}' }]);
+});

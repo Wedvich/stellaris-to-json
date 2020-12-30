@@ -23,17 +23,21 @@ export const tokenize = (text: string): Array<Token> => {
   while (current < text.length) {
     let c = text[current];
 
-    if (c === '#') {
-      let value = '';
-      c = text[++current];
-
-      while (!LINEBREAK.test(c)) {
-        value += c;
+    try {
+      if (c === '#') {
+        let value = '';
         c = text[++current];
-      }
 
-      tokens.push({ type: 'comment', value: value.trim() });
-      continue;
+        while (!LINEBREAK.test(c) && current < text.length) {
+          value += c;
+          c = text[++current];
+        }
+
+        tokens.push({ type: 'comment', value: value.trim() });
+        continue;
+      }
+    } catch (e) {
+      break;
     }
 
     if (c === '{' || c === '}') {
